@@ -1,0 +1,10 @@
+import cv2
+
+# Загрузка изображения
+image = cv2.imread('image.jpg')
+
+# Изменение размера изображения
+resized_image = cv2.resize(image, (500, 500))
+
+# Сохранение изображения
+cv2.imwrite('resized_image.jpg', resized_image)
